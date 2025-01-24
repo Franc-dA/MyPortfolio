@@ -101,7 +101,7 @@ try {
 
 
     // Impostazioni email
-    $mail->setFrom('fdargenio.info@gmail.com', 'Francesco D\'Argenio');
+    $mail->setFrom('SMTP_USERNAME', 'Francesco D\'Argenio');
     $mail->addAddress($data['email'], $data['name']); // Email del destinatario
     $mail->isHTML(true);
     $mail->Subject = 'Conferma Ricezione Messaggio';
