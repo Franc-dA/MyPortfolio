@@ -101,7 +101,7 @@ try {
 
 
     // Impostazioni email
-    $mail->setFrom('SMTP_USERNAME', 'Francesco D\'Argenio');
+    $mail->setFrom(getenv('SMTP_USERNAME'), 'Francesco d\'Argenio');
     $mail->addAddress($data['email'], $data['name']); // Email del destinatario
     $mail->isHTML(true);
     $mail->Subject = 'Conferma Ricezione Messaggio';
@@ -134,7 +134,6 @@ try {
         </div>
     </body>
     </html>
-
     ";
 
     // Invia l'email

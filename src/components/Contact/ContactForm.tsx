@@ -39,7 +39,7 @@ export function ContactForm() {
 
       <div className="flex justify-center">
         <ReCAPTCHA
-          sitekey="6LdA5q8qAAAAAIalLALCL46paJh4y_qDEFbyBX_h"
+          sitekey= {process.env.REACT_APP_RECAPTCHA_SITE_KEY} 
           onChange={handleCaptchaChange}
           theme="dark"
         />
